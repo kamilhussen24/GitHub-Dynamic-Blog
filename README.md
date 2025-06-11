@@ -58,15 +58,10 @@ So, whenever you add or remove `.html` files inside `/post/`, they are instantly
 
 ---
 
-## 🖼️ Adding Screenshots
-
-To include screenshots in your README or blog post:
-
-1. Upload your screenshot to `/post/image/` or `/assets/img/`.
-2. Use this Markdown syntax:
+## 🖼️  Screenshots
 
 ```md
-![Blog Screenshot](post/image/screenshot.png)
+![Blog Screenshot](post/image/demo.jpg)
 ```
 
 ---
@@ -75,7 +70,7 @@ To include screenshots in your README or blog post:
 
 Check out a live demo of the blog system here:
 
-🔗 [Live Demo](https://your-username.github.io/your-repo-name)
+🔗 [Live Demo](https://kamilhussen24.vercel.app/blog)
 
 *(Replace the URL with your actual GitHub Pages link)*
 
@@ -101,5 +96,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## 🙌 Credits
 
-Maintained by [Your Name](https://github.com/your-username).  
+Maintained by [Kamil Husseen](https://github.com/kamilhussen24).  
 Powered by GitHub Pages and the GitHub Content API.
