@@ -72,8 +72,6 @@ Check out a live demo of the blog system here:
 
 🔗 [Live Demo](https://kamilhussen24.vercel.app/blog)
 
-*(Replace the URL with your actual GitHub Pages link)*
-
 ---
 
 ## 👥 Contributing
