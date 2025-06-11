@@ -10,7 +10,7 @@ Ideal for developers, writers, and tech-savvy users who want a lightweight, fast
 ## 🚀 Features
 
 - ✅ **Dynamic Blog Posts**: All `.html` files inside the `/post` folder are treated as blog posts.
-- ✅ **Automatic Post Listing**: The homepage (`index.html`) dynamically lists all available blog posts.
+- ✅ **Automatic Post Listing**: The homepage (`index.html`) fetches the list of blog posts dynamically using the **GitHub Content API**.
 - ✅ **No CMS Needed**: Write your articles directly in HTML — clean, fast, and flexible.
 - ✅ **Static + Fast**: No backend or database needed. Entirely runs on GitHub Pages.
 - ✅ **Free Hosting**: Uses GitHub’s free Pages hosting.
@@ -18,16 +18,28 @@ Ideal for developers, writers, and tech-savvy users who want a lightweight, fast
 
 ---
 
+## 🧠 How It Works
+
+This system uses the **GitHub Content API** (`https://api.github.com/repos/{owner}/{repo}/contents/post`) to dynamically retrieve the list of `.html` files from the `/post` directory and renders them on the homepage.
+
+So, whenever you add or remove `.html` files inside `/post/`, they are instantly reflected on the blog’s homepage — no manual updates required.
+
+---
+
 ## 📁 Folder Structure
 
 ```
 /
-├── index.html             # Main homepage (lists all posts)
-├── /post/                 # Folder containing all your blog posts
+├── index.html               # Main homepage (lists all posts)
+├── /post/                   # Folder containing all your blog posts
 │   ├── article1.html
 │   ├── article2.html
-│   └── ...
-└── /assets/ (optional)    # CSS, JS, images, etc.
+│   ├── ...
+│   └── /image/              # Blog-specific images stored here
+│       ├── post1-img.png
+│       ├── post2-banner.jpg
+│       └── ...
+└── /assets/ (optional)      # CSS, JS, global images, etc.
 ```
 
 ---
@@ -37,33 +49,35 @@ Ideal for developers, writers, and tech-savvy users who want a lightweight, fast
 1. **Fork this repository** or clone it to your local machine.
 2. Inside the `/post` folder, create a new `.html` file for each blog post.
    - Example: `/post/my-first-post.html`
-3. Make sure `index.html` includes or fetches the list of posts dynamically (already configured).
-4. Push your changes to GitHub.
-5. Go to your repo’s settings → Pages → and enable GitHub Pages.
-6. Your blog is now live at `https://your-username.github.io/your-repo-name`.
+3. Place any images related to the post inside `/post/image/`.
+   - Reference them in your post like: `<img src="image/my-image.png">`
+4. Make sure `index.html` uses JavaScript to call the GitHub API and render post links (already configured).
+5. Push your changes to GitHub.
+6. Enable GitHub Pages from the repository settings.
+7. Your blog is now live at `https://your-username.github.io/your-repo-name`.
 
 ---
 
 ## 🖼️ Adding Screenshots
 
-To include screenshots in your README or post:
+To include screenshots in your README or blog post:
 
-1. Upload your screenshot to the repository (e.g., inside `/assets/img/`).
-2. Use the following Markdown to display it:
+1. Upload your screenshot to `/post/image/` or `/assets/img/`.
+2. Use this Markdown syntax:
 
 ```md
-![Blog Screenshot](assets/img/screenshot.png)
+![Blog Screenshot](post/image/screenshot.png)
 ```
 
 ---
 
 ## 🌐 Live Demo
 
-Click below to check out a live demo of this blog system in action:
+Check out a live demo of the blog system here:
 
 🔗 [Live Demo](https://your-username.github.io/your-repo-name)
 
-*(Replace the URL with your own GitHub Pages link)*
+*(Replace the URL with your actual GitHub Pages link)*
 
 ---
 
@@ -88,4 +102,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 🙌 Credits
 
 Maintained by [Your Name](https://github.com/your-username).  
-Inspired by the simplicity of old-school blogging.
+Powered by GitHub Pages and the GitHub Content API.
