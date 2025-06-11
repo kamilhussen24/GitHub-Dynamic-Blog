@@ -58,11 +58,11 @@ So, whenever you add or remove `.html` files inside `/post/`, they are instantly
 
 ---
 
-## 🖼️  Screenshots
+## 🖼️ Blog UI Preview
 
-```md
+This is how your homepage will look with live blog posts:
+
 ![Blog Screenshot](post/image/demo.jpg)
-```
 
 ---
 
