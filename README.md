@@ -62,7 +62,7 @@ So, whenever you add or remove `.html` files inside `/post/`, they are instantly
 
 This is how your homepage will look with live blog posts:
 
-![Blog Screenshot](post/image/demo.jpg)
+![Blog Screenshot](post/Image/demo.jpg)
 
 ---
 
